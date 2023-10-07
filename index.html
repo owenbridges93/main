@@ -1,58 +1,102 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Biography on Erwin Schr&oumldinger</title>
+        <link rel="icon" type="image/png" href="https://owenbridges93.github.io/schrodinger/inversewiki.png" />
+        <title>Erwin Schr&oumldinger</title>
         <style>
             body{
                 font-family: 'Times New Roman', Times, serif;
-                background-color:rgb(250, 250, 250);
+                background-color:rgb(240, 240, 240);
+                text-wrap:pretty;
             }
-            marquee{
-                background:rgb(75,75,75);
-                height:50px;
-                font-size:40px;
-                color:white;
-                margin-top: 10px;
+            p{
+                margin-top:0%;
+                margin-bottom:0%;
+                font-size: 105%;
+                text-wrap:calc();
             }
-            .header{
-                font-size: 200%;
+            h1, h2, h3, h4, h5, h6{
+                margin-top:0%;
                 margin-bottom: 0%;
             }
-            hr{
-                margin-top:1%;
-                width:75%;
-                float:left;
+            h4{
+                font-family: Arial, Helvetica, sans-serif;
             }
-            .masterTable{
+            ul, ol{
+                margin-top:0%;
+                margin-bottom:0%;
+                margin-left:-2%;
+            }
+            div{
+                margin-left: 21.5%;
+                margin-right:21.5%;
+            }
+            .marquee{
+                position:fixed;
+                top:0;
+                font-size:40px;
+                color:rgb(0, 0, 0);
+                margin-top: 10px;
+                animation: marquee 14s linear infinite;
+            }
+            @keyframes marquee {
+                0%  { transform: translate(400%); }
+                100%{ transform: translate(-400%); }
+            }
+            hr{
+                position:absolute;
+                margin-top:0.3%;
+                width:55%;
+                z-index: -1;
+            }
+            #masterTable{
                 border:1px solid rgb(59, 59, 59);
                 background:rgb(240, 240, 240);
                 float:right;
-                height:150%;
-                width:23%;
-                margin-top:1.5%;
+                width: 250px;
+                margin-top:60px;
+                margin-right:21.5%;
                 font-family:Arial, Helvetica, sans-serif;
             }   
+            .header{
+                font-size: 200%;
+                margin-top:2.4%;
+                margin-bottom: 0%;
+            }
             .tableImage{
                 max-width:80%;
                 height:auto;
-                width:auto;
             }
-            .tableHeader{
+            .subTableHeader{
                 font-weight: bold;
                 vertical-align: top;
                 text-align: left;
+                min-width: 53%;
             }
-            tr{
-                border:10px solid black;
+            .subTableData{
+                text-align:left;
             }
-            td{
-                text-align: left;
+            .subTable{
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+                width:249px;
+            }
+            .pageImage{
+                position:absolute;
+                box-shadow: 0 0 10px #000000;
+                height:400%;
+                width:60%;
+                z-index:-999;
+                margin-top: -10px;
+                margin-left:20%;
+                margin-right:20%;
             }
         </style>
     </head>
     <body>
-        <marquee>Find More at owenbridges93.github.io/home</marquee>
-        <table class="masterTable">
+        <img src="https://www.drodd.com/images14/white17.jpg" class="pageImage">
+        <h1 class="marquee">Find&nbspMore&nbspat&nbsp<span><a href="https://owenbridges93.github.io/home">OwenBridges93.github.io/home</a></span></h1>
+        <table id="masterTable">
             <tr>
                 <th style="font-size:120%;text-align:center;">Erwin Schr&oumldinger</th>
             </tr>
@@ -61,38 +105,86 @@
             </tr>
             <tr>
                 <td>
-                    <table>
+                    <table class="subTable">
                         <tr>
-                        <td class="tableHeader">Born</td>
-                        <td>12 August 1887</td>
+                        <td class="subTableHeader">Born</td>
+                        <td class="subTableData">12 August 1887</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <table>
+                    <table class="subTable">
                         <tr>
-                        <td class="tableHeader">Died</td>
-                        <td>4 January 1961</td>
+                        <td class="subTableHeader">Died</td>
+                        <td class="subTableData">4 January 1961</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <table>
+                    <table class="subTable">
                         <tr>
-                        <td class="tableHeader">Citizenship</td>
-                        <td>Austria<br>Ireland (1948)</td>
+                        <td class="subTableHeader">Citizenship</td>
+                        <td class="subTableData">Austria<br>Ireland (1948)</td>
                         </tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td class="tableHeader" style="text-align:center;">Signature<br><img alt="Loading..." src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Erwin_Schr%C3%B6dinger_signature.svg/1920px-Erwin_Schr%C3%B6dinger_signature.svg.png" class="tableImage"></td>
+                <td>
+                    <table class="subTable">
+                        <tr>
+                        <td class="subTableHeader">Awards</td>
+                        <td class="subTableData">Haitzinger Prize<br>Nobel Prize in Physics<br>Max Planck Medal</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="subTable">
+                        <tr>
+                        <td class="subTableHeader">Citizenship</td>
+                        <td class="subTableData">Austria<br>Ireland (1948)</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="subTableHeader" style="text-align:center;">Signature<br><img alt="Loading..." src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Erwin_Schr%C3%B6dinger_signature.svg/1920px-Erwin_Schr%C3%B6dinger_signature.svg.png" class="tableImage"></td>
             </tr>
         </table>
-        <p class="header">Erwin Rudolf Josef Alexander Schr&oumldinger</p><hr>
+        <div>
+            <p class="header" style="margin-top:85px;">Erwin&nbspSchr&oumldinger</p><hr><br>
+            <p><strong>Erwin Rudolf Josef Alexander Schr&oumldinger</strong> was an Austrian physicist who won the Nobel-Prize and made great contributions to quantum theory. He is most well known for the postulation of the Schr&oumldinger equation, which facilitates the calculation of the wave function of a system and how it changes over time. </p><br>
+            <h4>Early Life</h4>
+            <p>Schr&oumldinger was born in August of 1887 in Vienna, Austria. His mother was mixed with Austrian and English descent. His father subscribed to Catholicism and his mother, Lutheranism. Despite this, Schr&oumldinger was an atheist. He learned to speak English from his grandmother, who was British. Schr&oumldinger studied at the University of Vienna and there he recieved his doctorate.</p><br>
+            <h4>Middle Life</h4>
+            <p>Schr&oumldinger achieved habilitation in 1914 and went to go participate as a commissioned officer in the Austrian fortress artillery. In 1920 Schr&oumldinger became an associate professor, and a year later, a full professor. In 1933, Schr&oumldinger fled Germany due to his opposition to Nazi antisemitism. While teaching at various universities Schr&oumldinger was awarded a nobel prize and proposed the Schr&oumldinger's cat thought experiment.</p><br>
+            <h4>Late Life and Death</h4>
+            <p>In 1938, the University of Graz dismissed Schr&oumldinger due to political unreliability because of his opposition to Nazism despite a formal statement he issued recanting his opposition. He began visiting positions in other countries' Universities such as Oxford and Ghent University. He later settled down in Ireland where he became a citizen and wrote almost 50 publications on various topics, such as unified field theory. Schr&oumldinger contracted tuberculosis in the late 1920s and it was then that he postulated his wave equation. On the fourth of January, 1961, Schr&oumldinger passed away due to his tuberculosis at age 73. Schr&oumldinger was buried in Alpach, Austia, in a Catholic cemetary.</p>
+            <p class="header">Major Accomplishments</p><hr><br>
+            <ol>
+                <li>Postulated the Schr&oumldinger's equation, which governs parts of a quantum mechanical system</li>
+                <li>Awarded the Nobel Prize of Physics in 1933</li>
+                <li>Thought of the Schr&oumldinger's cat thought experiment, where a cat is placed in a box, and once the treatment is applied, the cat is both dead and alive</li>
+                <li>Came up with the Schr&oumldinger method, which is used in combinatorial mathematics and probability theory to solve problems of distribution and occupancy</li>
+                <li>Determined the existence of quantum energy levels, which are the discrete values of energy that quantum mechanical systems or particles can have</li>
+            </ol>
+            <p class="header">More on Schr&oumldinger...</p><hr><br>
+            <ul>
+                <li><a href="https://www.britannica.com/biography/Erwin-Schrodinger">The Encyclopedia Britannica</a></li>
+                <li><a href="https://www.nobelprize.org/prizes/physics/1933/schrodinger/biographical/">The Nobel Prize Committee</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger">Wikipedia: The Free Encyclopedia</a></li>
+            </ul>
+            <p class="header">Student Critiques</p><hr><br>
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Sed euismod nisi porta lorem. Sit amet purus gravida quis blandit. Est ante in nibh mauris cursus. Sed arcu non odio euismod lacinia. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Ante in nibh mauris cursus mattis. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Sed sed risus pretium quam vulputate dignissim suspendisse in est.</p>
+            <h4>Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Sed euismod nisi porta lorem. Sit amet purus gravida quis blandit. Est ante in nibh mauris cursus. Sed arcu non odio euismod lacinia. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Ante in nibh mauris cursus mattis. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Sed sed risus pretium quam vulputate dignissim suspendisse in est.</p>
+        </div>
     </body>
 </html> 
