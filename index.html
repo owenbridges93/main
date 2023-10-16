@@ -18,11 +18,6 @@
                 width:838px;
                 z-index: -1;
             }
-            div{
-                width:888px;
-                margin-left:auto;
-                margin-right:auto;
-            }
             body{
                 font-family: 'Times New Roman', Times, serif;
                 background-color:rgb(240, 240, 240);
@@ -35,7 +30,7 @@
                 text-decoration:underline;
             }
             a:visited{
-                color:blueviolet;
+                color:rgb(160, 100, 215);
                 text-decoration:underline;
             }
             p, h1, h4, ul, .header{
@@ -59,7 +54,7 @@
             }
             #pageTitle{
                 font-size:250%;
-                margin-top:80px;
+                margin-top:0vh;
             }
             .header{
                 font-size: 200%;
@@ -67,6 +62,7 @@
                 margin-bottom: 0%;
             }
             .tableImage{
+                width:auto;
                 max-width:80%;
                 height:auto;
             }
@@ -85,24 +81,46 @@
                 width:249px;
             }
             .pageImage{
-                position:absolute;
+                position:fixed;
                 box-shadow: 0 0 10px #000000;
-                height:1450px;
-                width:888px;
-                margin-top:-15px;
-                z-index:-999;
+                height:200vh;
+                width:200vw;
+                margin-top:-50vh;
+                margin-left:-50vw;;
+                z-index:-1;
             }
             .marquee{
-                position:fixed;
+                position:absolute;
                 font-size:40px;
                 color:rgb(0, 0, 0);
                 animation: marquee 14s linear infinite;
                 margin-top:-72px;
+                z-index:1000;
             }
             @keyframes marquee {
                 0%  { transform: translate(400%); }
                 100%{ transform: translate(-400%); }
             }            
+            @media screen and (min-width: 240mm) {
+                div{
+                width:888px;
+                margin-left:auto;
+                margin-right:auto;
+                }
+                .pageImage{
+                position:absolute;
+                box-shadow: 0 0 10px #000000;
+                height:1450px;
+                width:888px;
+                margin-top:-15px;
+                margin-left:0%;
+                z-index:-1;
+                }
+                #pageTitle{
+                font-size:250%;
+                margin-top:80px;
+                }
+            }
         </style>
     </head>
     <body>
