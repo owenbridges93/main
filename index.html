@@ -108,6 +108,13 @@
                 100%{ transform: translate(-400%); }
             }            
             @media  handheld, screen and (max-width: 240mm) {
+            div{
+                width:100vw;
+            }
+            hr, #majAccHr{
+                margin-left:2.5%;
+                width:90vw;
+            }
             .pageImage{
                 position:fixed;
                 height:200vh;
@@ -117,8 +124,26 @@
                 z-index:-1;
             }
             #pageTitle{
-                font-size:250%;
+                float:;
+                font-size:30px;
                 margin-top:0vh;
+            }
+            #masterTable{
+                float:right;
+                width:20vw;
+            }   
+            .tableImage{
+                max-width:15vw;
+                height:auto;
+            }
+            .subTableHeader{
+                font-weight: bold;
+                vertical-align: top;
+                text-align: left;
+                width: 50%;
+            }
+            .subTable{
+                width:19vw;
             }
             }
         </style>
