@@ -95,17 +95,25 @@
                 font-size:250%;
                 margin-top:80px;
                 }
-            .marquee{
-                position:absolute;
+            .cssMarquee{
+                position:fixed;
+                overflow:hidden;
                 font-size:40px;
+                margin-top:-75px;
                 color:rgb(0, 0, 0);
-                animation: marquee 8s linear infinite;
-                margin-top:-72px;
                 z-index:1000;
+                animation: cssMarquee 7s linear infinite;
             }
-            @keyframes marquee {
-                0%  { transform: translate(400%); }
-                100%{ transform: translate(-400%); }
+            .cssMarquee:hover{
+                animation-play-state:paused;
+            }
+            @keyframes cssMarquee {
+                0%   { 
+                    margin-left:100%;
+                }
+                100% { 
+                    margin-left:-100%;
+                }
             }            
             @media  handheld, screen and (max-width: 240mm) {
             div{
@@ -149,9 +157,9 @@
         </style>
     </head>
     <body>
+        <h2 class="cssMarquee">Provide&nbspYour&nbspFeedback&nbsp><a href="https://forms.gle/LbGtWEGhvMiaGAnT9">Here</a><</h2>
         <div>
             <img src="https://owenbridges93.github.io/schrodinger/whiteimage.jpg" class="pageImage">
-            <h1 class="marquee">Provide Your Feedback <a href="https://forms.gle/LbGtWEGhvMiaGAnT9">here</a></h1>
             <table id="masterTable">
                 <tr>
                     <th style="font-size:120%;text-align:center;">Erwin Schr&oumldinger</th>
